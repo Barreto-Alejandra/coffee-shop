@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito+Sans:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../dist/main.css" />
     <title>Home</title>
   </head>
 
   <body>
-    <header class="header wrapper flex items-center p-4" id="js-header">
-      <a href="/" class="flex items-center space-x-2">
+    <header class="header wrapper fixed top-0 left-0 w-full flex items-center px-4 py-2 bg-white shadow-md z-50 lg:px-6">
+      <a href="/" class="flex items-center space-x-3">
         <img src="../src/assets/icon.png" alt="Coffee Shop Logo" class="h-8 w-8" />
-        <span class="text-xl font-semibold text-gray-800">Coffee Shop</span>
+        <span class="text-xl font-serif font-semibold text-gray-800 tracking-wide">Coffee Shop</span>
       </a>
     </header>
+    
 
     <main>
       <section class="relative bg-cover bg-center h-screen" style="background-image: url('../src/assets/hero.jpg');">
 
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-          <h1 class="text-4xl sm:text-6xl font-bold mb-4">The New Coffee Shop</h1>
-          <p class="text-lg sm:text-2xl mb-6">Opening Soon – Your perfect spot for great coffee and moments.</p>
+          <h1 class="text-4xl sm:text-6xl font-serif font-bold mb-4">The New Coffee Shop</h1>
+          <p class="font-sans text-lg sm:text-2xl mb-6">Opening Soon – Your perfect spot for great coffee and moments.</p>
           <a href="#more-info" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium text-lg rounded-lg transition duration-300">
             Learn More
           </a>
