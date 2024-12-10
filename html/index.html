@@ -9,14 +9,59 @@
   </head>
 
   <body>
-    <header class="header wrapper" id="js-header">
-     
+    <header class="header wrapper flex items-center p-4" id="js-header">
+      <a href="/" class="flex items-center space-x-2">
+        <img src="../src/assets/icon.png" alt="Coffee Shop Logo" class="h-8 w-8" />
+        <span class="text-xl font-semibold text-gray-800">Coffee Shop</span>
+      </a>
     </header>
 
     <main>
-        <div class="wrapper">
-            <h1>hello world</h1>
+      <section class="relative bg-cover bg-center h-screen" style="background-image: url('../src/assets/hero.jpg');">
+
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+          <h1 class="text-4xl sm:text-6xl font-bold mb-4">The New Coffee Shop</h1>
+          <p class="text-lg sm:text-2xl mb-6">Opening Soon – Your perfect spot for great coffee and moments.</p>
+          <a href="#more-info" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium text-lg rounded-lg transition duration-300">
+            Learn More
+          </a>
         </div>
+      </section>
+
+      <section class="about-us px-6 py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <!-- Texto -->
+          <div class="space-y-4">
+            <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+            <p class="text-gray-600 text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+              Cras venenatis euismod malesuada. Our coffee shop is about passion, quality, and bringing people together.
+            </p>
+            <p class="text-gray-600 text-lg">
+              Stay tuned for the grand opening. We’re brewing something special just for you!
+            </p>
+          </div>
+      
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../src/assets/slide-01.jpg" alt="Coffee Shop 1" class="w-full h-auto rounded-lg shadow-md" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../src/assets/slide-02.jpg" alt="Coffee Shop 2" class="w-full h-auto rounded-lg shadow-md" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../src/assets/slide-03.jpg" alt="Coffee Shop 3" class="w-full h-auto rounded-lg shadow-md" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../src/assets/slide-04.png" alt="Coffee Shop 3" class="w-full h-auto rounded-lg shadow-md" />
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
     </main>
 
     <footer class="footer"></footer>
