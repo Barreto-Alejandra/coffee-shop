@@ -8,8 +8,7 @@ module.exports = {
   entry: ["./src/js/index.js"],
   output: {
     path: path.resolve(__dirname, "dist"),
-    //publicPath: "/wp-content/themes/coffee-shop/dist/",
-    publicPath: '/dist/',
+    publicPath: "/dist/",
     filename: "bundle.js",
     chunkFilename: "[id][hash].js",
     clean: true,
@@ -18,7 +17,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: [/node_modules\/(?!(swiper|dom7)\/).*/, /\.test\.jsx?$/],
+        exclude: [/node_modules\/(?!(swiper|dom11)\/).*/, /\.test\.jsx?$/],
         use: {
           loader: "babel-loader",
           options: {
@@ -43,6 +42,13 @@ module.exports = {
           "css-loader",
           "postcss-loader",
           "sass-loader",
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
         ],
       },
       {
@@ -71,7 +77,7 @@ module.exports = {
     new BrowserSyncPlugin(
       {
         proxy: "http://localhost:3000/",
-        files: ["dist" + "/*.css", "dist" + "/*.js"],
+        files: ["dist/*.css", "dist/*.js"],
         injectCss: true,
       },
       { reload: false }
@@ -79,8 +85,8 @@ module.exports = {
     new MiniCssExtractPlugin(),
   ],
   devtool: false,
-
   externals: {
     jquery: "jQuery",
   },
 };
+
